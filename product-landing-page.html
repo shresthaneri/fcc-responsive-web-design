@@ -65,12 +65,9 @@
         }
 
         #form {
-            padding: 30px 0px 0px 60px;
-        }
-
-        div {
+            /* padding: 30px 0px 0px 60px; */
             display: flex;
-            padding: 10px;
+            padding: 5px;
             border-radius: 50px;
             background-color: white;
             font-size: 18px;
@@ -82,6 +79,12 @@
             width: 80%;
             border: none;
             background-color: white;
+            padding: 0 10px;
+            font-size: 16px;
+        }
+
+        #email:focus {
+            outline: none;
         }
 
         #submit {
@@ -89,8 +92,9 @@
             border: none;
             background-color: rgb(248, 217, 241);
             border-radius: 50px;
-            padding: 5px;
+            padding: 10px 5px;
             cursor: pointer;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -123,13 +127,11 @@
     <iframe id="video" src="https://www.youtube.com/embed/fYCMvYvkyJw" title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
-
+    <h3>Subscribe</h3>
     <form action="https://www.freecodecamp.com/email-submit" id="form">
-        <h3>Subscribe</h3>
-        <div>
-            <input type="email" name="email" id="email" placeholder="Enter your email" required>
-            <button type="submit" id="submit">Submit</button>
-        </div>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <button type="submit" id="submit">Submit</button>
+
     </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
