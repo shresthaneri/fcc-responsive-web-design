@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <style>
+        body {
+            background-color: rgb(151, 185, 171);
+            font-family: ;
+        }
+
+        #title {
+            text-align: center;
+            color: aliceblue;
+            font-size: 32px;
+            padding: 50px 0px 0px 0px;
+        }
+
+        #description {
+            text-align: center;
+            color: aliceblue;
+            font-style: italic;
+            font-size: 24px;
+        }
+
+        #survey-form {
+            background-color: rgb(85, 121, 106);
+            max-width: 40%;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            color: aliceblue;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1 id="title">ITSNP Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label><br>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <br>
+            <label for="email" id="email-label">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <br>
+            <label for="number" id="number-label">Age (optional)</label><br>
+            <input type="number" id="number" placeholder="Age" min="10" max="100">
+            <br>
+            <label for="dropdown">Which option best describes your current role?</label><br>
+            <select name="roles" id="dropdown">
+                <option value="student">Student</option>
+                <option value="fulltimejob">Full Time Job</option>
+                <option value="fulltimelearner">Full Time Learner</option>
+                <option value="prefernottosay">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+
+            <label>Would you recommend ITSNP to a friend?</label><br>
+
+            <label for="radio">
+                <input type="radio" id="recommend" value="definitely" name="recommend">
+                Definitely
+            </label>
+            <br>
+
+            <label for="radio">
+                <input type="radio" id="maybe" value="maybe" name="recommend">
+                Maybe
+            </label>
+            <br>
+
+            <label for="radio">
+                <input type="radio" id="notsure" value="notsure" name="recommend">
+                Not sure</label>
+            <br>
+
+            <label for="dropdown1">What is your favorite feature of ITSNP?</label><br>
+            <select name="feature" id="dropdown1">
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="members">Members</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+
+            <label>What would you like to see improved?</label><br>
+
+            <label>
+                <input type="checkbox" value="value">
+                Challenges
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" value="value">
+                Posts
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" value="value">
+                Open Source Community
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" value="value">
+                Meetups
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" value="value">
+                Wiki
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" value="value">
+                Forum
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" value="value">
+                Additional Courses
+            </label>
+            <br>
+
+            <label>Any comments or suggestions?</label><br>
+            <textarea name="textarea" id="" cols="30" rows="10" placeholder="Enter your comment here"></textarea><br>
+            <input type="submit" id="submit">
+        </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+</html>
