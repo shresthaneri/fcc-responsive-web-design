@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <style>
+        body {
+            background-color: rgb(248, 217, 241);
+            max-width: 70%;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #header {
+            display: flex;
+        }
+
+        #header-img {
+            width: 175px;
+        }
+
+        #nav-bar {
+            position: fixed;
+            padding-left: 180px;
+        }
+
+        li {
+            padding: 30px;
+            display: inline-block;
+        }
+
+        .nav-link {
+            padding: 30px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 0px 0px 0px 60px;
+        }
+
+        h3 {
+            font-size: 32px;
+        }
+
+        strong {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 18px;
+            max-width: 80%;
+            text-align: justify;
+        }
+
+        #video {
+            padding: 30px 0px 0px 60px;
+            width: 700px;
+            height: 500px;
+        }
+
+        #form {
+            padding: 30px 0px 0px 60px;
+        }
+
+        div {
+            display: flex;
+            padding: 10px;
+            border-radius: 50px;
+            background-color: white;
+            font-size: 18px;
+            width: 30%;
+            border: none;
+        }
+
+        #email {
+            width: 80%;
+            border: none;
+            background-color: white;
+        }
+
+        #submit {
+            width: 40%;
+            border: none;
+            background-color: rgb(248, 217, 241);
+            border-radius: 50px;
+            padding: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <img src="https://itsnp.org/wp-content/uploads/2022/02/itsnp.png" alt="itsnp" id="header-img">
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#itsnp" class="nav-link">INFO</a></li>
+                <li><a href="#video" class="nav-link">KNOW US</a></li>
+                <li><a href="#form" class="nav-link">SUBSCRIBE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="itsnp">
+        <h3>What is ITSNP?</h3>
+        <p><strong>IT Students of Nepal (ITSNP)</strong> is a community for tech enthusiasts.
+            You may explore and share your knowledge, perspectives on anything
+            potentially tech-related in this community. We are a welcoming community
+            for anybody interested in technology, whether you are a beginner, experienced,
+            or an expert.You can meet those with similar interests here and share your
+            expertise, or just have a chit-chat, or vibe to songs with your online friends.
+            We are constantly striving to create a welcoming and warm workplace for newcomers.
+            Several workshops and sessions focused on familiarizing newbies with technology are
+            held on a regular basis, which might help you get started on your journey of learning.</p>
+    </section>
+
+    <iframe id="video" src="https://www.youtube.com/embed/fYCMvYvkyJw" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <h3>Subscribe</h3>
+        <div>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
