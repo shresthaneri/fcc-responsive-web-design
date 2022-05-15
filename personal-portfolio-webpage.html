@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Webpage</title>
+
+    <style>
+        body {
+            background-color: rgb(245, 210, 188);
+            margin: 0;
+            color: #39393a;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            background-color: #ff6b15;
+            padding: 20px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+
+        #navbar a {
+            text-decoration: none;
+            width: 100%;
+            margin: 175px;
+            color: azure;
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        #welcome-section {
+            margin-top: 70px;
+            width: 100vm;
+            height: 400px;
+            background-color: rgb(247, 223, 208);
+            text-align: center;
+        }
+
+        #welcome-section h1 {
+            padding-top: 150px;
+            font-size: 40px;
+        }
+
+        #welcome-section p {
+            font-size: 18px;
+            color: #ff6b15;
+        }
+
+        #projects {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        img {
+            width: 250px;
+            height: auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        #view {
+            width: 200px;
+            background-color: #ff6b15;
+            margin-left: 40%;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #view a {
+            text-decoration: none;
+            font-size: 22px;
+            color: azure;
+
+
+        }
+
+        #contacts {
+            margin-top: 30px;
+            width: 100vm;
+            height: 400px;
+            background-color: rgb(247, 223, 208);
+            text-align: center;
+        }
+
+        #contacts h1 {
+            padding-top: 150px;
+            font-size: 40px;
+        }
+
+        #contacts a {
+            font-size: 22px;
+            color: #ff6b15;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="#welcome-section">About</a>
+        <a href="#projects">Work</a>
+        <a href="#contacts">Contact</a>
+    </nav>
+
+    <header id="welcome-section">
+        <h1>Hey I am Nerisha Shrestha</h1>
+        <p><i>a UI/UX designer currently exploring Web Development</i></p>
+    </header>
+    <header id="projects">
+        <h1>View some of my projects</h1>
+        <div class="project-tile">
+            <img src="https://online.coolestprojects.org/packs/media/images/coolest_projects-7b439f3147b28e25ed03f23f780909f8.png"
+                alt="Projects"><br>
+            <div id="view">
+                <a href="https://codepen.io/shresthaneri">View Projects</a>
+            </div>
+        </div>
+    </header>
+    <br>
+    <header id="contacts">
+        <h1>Let's get connected!</h1>
+        <a href="https://www.facebook.com/itsnporg" target="_blank" id="profile-link">Facebook</a>
+    </header>
+</body>
+
+</html>
